@@ -1,0 +1,87 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>Robzone</groupId>
+  <artifactId>Robzone</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>war</packaging>
+  
+    <build>
+    <sourceDirectory>src</sourceDirectory>
+    <plugins>
+      <plugin>
+        <artifactId>maven-war-plugin</artifactId>
+        <version>2.6</version>
+        <configuration>
+          <warSourceDirectory>WebContent</warSourceDirectory>
+          <failOnMissingWebXml>false</failOnMissingWebXml>
+        </configuration>
+      </plugin>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.3</version>
+        <configuration>
+          <source>1.8</source>
+          <target>1.8</target>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+  
+  <dependencies>
+  	<dependency>
+  		<groupId>cz.leveland</groupId>
+  		<artifactId>appbase</artifactId>
+  		<version>0.0.1-SNAPSHOT</version>
+  	</dependency>
+  	<dependency>
+	  <!-- jsoup HTML parser library @ http://jsoup.org/ -->
+	  <groupId>org.jsoup</groupId>
+	  <artifactId>jsoup</artifactId>
+	  <version>1.10.2</version>
+	</dependency>
+	<dependency>
+		<groupId>com.fasterxml.jackson.core</groupId>
+		<artifactId>jackson-core</artifactId>
+		<version>2.8.5</version>
+	</dependency>
+	
+	<!-- 
+    <dependency>
+	  <groupId>com.fasterxml.jackson.dataformat</groupId>
+	  <artifactId>jackson-dataformat-xml</artifactId>
+	  <version>2.9.0</version>
+	</dependency>
+	<dependency>
+	  <groupId>org.codehaus.woodstox</groupId>
+	  <artifactId>woodstox-core-asl</artifactId>
+	  <version>4.4.1</version>
+	</dependency>
+	 -->
+
+	<dependency>
+		<groupId>org.apache.commons</groupId>
+		<artifactId>commons-pool2</artifactId>
+		<version>2.4.2</version>
+	</dependency>
+
+	<dependency>
+		<groupId>com.fasterxml.jackson.core</groupId>
+		<artifactId>jackson-annotations</artifactId>
+		<version>2.8.5</version>
+	</dependency>
+	<dependency>
+		<groupId>com.fasterxml.jackson.core</groupId>
+		<artifactId>jackson-databind</artifactId>
+		<version>2.8.5</version>
+	</dependency>
+	<!-- https://mvnrepository.com/artifact/com.pusher/pusher-java-client -->
+	<dependency>
+	    <groupId>com.pusher</groupId>
+	    <artifactId>pusher-java-client</artifactId>
+	    <version>1.4.0</version>
+	</dependency>
+	
+  </dependencies>
+  
+  
+</project>
