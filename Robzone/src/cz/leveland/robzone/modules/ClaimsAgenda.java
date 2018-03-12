@@ -129,6 +129,11 @@ public class ClaimsAgenda extends Agenda{
 	}
 
 
+	/**
+	 * 
+	 * @param claimId
+	 * @return
+	 */
 	public ResponseObject getClaim(int claimId) {
 		
 		Claim claim = claimDao.get(claimId);
