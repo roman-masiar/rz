@@ -359,6 +359,11 @@ order.setCurrencyId(901);
 			newItem.setUnitPrice(0.0);
 			newItem.setPrice(0.0);
 			newItem.setTotalPrice(0.0);
+		} else {
+			newItem.setPayerId(null);
+			newItem.setUnitPrice(product.getPrice());
+			newItem.setPrice(product.getPrice());
+			newItem.setTotalPrice(product.getPrice());
 		}
 		
 		return newItem;
